@@ -1,6 +1,6 @@
 html {
   background: #f5f7f8;
-  font-family: system-ui;
+  font-family: "EB Garamond", serif;
   -webkit-font-smoothing: antialiased;
   padding: 20px 0;
 }
@@ -55,6 +55,7 @@ header {
   justify-content: space-between;
 }
 .card h1 {
+  font-family: "EB Garamond", serif;
   font-size: 20px;
   margin: 0;
   color: #333;
@@ -64,6 +65,7 @@ header {
   line-height: 1.4;
 }
 .card span {
+  font-family: "EB Garamond", serif;
   font-size: 12px;
   font-weight: bold;
   color: #999;
@@ -77,12 +79,31 @@ header {
   background-position: center center;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 @media (max-width: 60em) {
   .item-1 {
     /* grid-template-rows: 100px 100px 100px; */
     grid-template-columns: auto auto auto;
   }
   .item-1 h1 {
+    font-family: "EB Garamond", serif;
     font-size: 24px;
   }
 }
@@ -91,6 +112,7 @@ header {
 .bgimg, .bgimg-2 {
   background-image: url('./images/Mini_KidPose.jpg');
   min-height: 100%;
+  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,9 +120,8 @@ header {
 }
 
 .mySlides {display: none}
-body,h1,h2,h3,p {font-family: "Permanent Marker", cursive}
+body,h1,h2,h3,p {font-family: "EB Garamond", serif}
 body, html {height: 100%}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 3200px) {
   .bgimg, .bgimg-1, .bgimg-2, .bgimg-3 {
