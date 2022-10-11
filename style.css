@@ -89,7 +89,7 @@ header {
  
 /* Create a Parallax Effect */
 .bgimg, .bgimg-2 {
-  background-image: url('images/BoilingCrab.jpeg');
+  background-image: url('./images/Mini_KidPose.jpg');
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
